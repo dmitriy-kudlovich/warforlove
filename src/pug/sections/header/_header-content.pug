@@ -1,6 +1,15 @@
 .header-content
-    p.header__text New Single
-    h1.heading--main.heading War For Love
+    .header__desc
+        p.header__text New Single
+        h1.heading--main.heading War For Love
     .header__audio
-        audio(controls preload="metadata")
-            source(src="./libs/audio.mp3" type="audio/mpeg")
+        button.btn-play(id="btnPlay")
+            img(src="./img/icons/play.svg" alt="play" id="btnPlayImg")
+        .audio__progress-wrapper#audioProgressWrapper
+            .audio__progressbar#audioProgressBar
+                .audio__progress#audioProgress
+        .audio__time-bar
+            p.audio__time#audioTimeCurrent 00:00
+            p.audio__dash -
+            p.audio__time#audioTimeFull
+        audio(preload="metadata" id="audio" src="./libs/audio.mp3")

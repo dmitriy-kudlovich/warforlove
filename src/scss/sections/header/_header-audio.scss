@@ -1,0 +1,51 @@
+.header__audio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.audio__progress-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  width: 80%;
+
+  cursor: pointer;
+}
+
+.audio__progressbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.audio__time-bar {
+  display: flex;
+  align-items: center;
+  width: 6.875rem;
+}
+
+.audio__time {
+  font-weight: 500;
+  font-size: 1.125;
+  line-height: 1.69rem;
+}
+
+.audio__progress {
+  position: relative;
+  height: 100%;
+  background-color: #7a66cc;
+}
+
+.audio__progress::after {
+  content: "";
+  position: absolute;
+  right: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 20px;
+  background-color: #7a66cc;
+}

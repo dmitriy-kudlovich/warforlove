@@ -12,17 +12,28 @@
       <div class="header">
         <div class="header__container">
           <div class="header__top"><a class="logo" href="index.html">
-              <div class="logo__img-wrapper"><img src="./img/logo-img.png"/></div>
-              <div class="logo__text-wrapper"><img src="./img/logo-text.png"/></div></a>
+              <div class="logo__img-wrapper"><img src="./img/logo-img.png" alt="logo"/></div>
+              <div class="logo__text-wrapper"><img src="./img/logo-text.png" alt="logo"/></div></a>
             <div class="header__nav"><a class="nav__link" href="#!">About</a><a class="nav__link" href="#!">News</a><a class="nav__link" href="#!">Music</a><a class="nav__link" href="#!">Media</a><a class="nav__link" href="#!">Tours</a><a class="nav__link" href="#!">Contacts</a></div>
           </div>
           <div class="header-content">
-            <p class="header__text">New Single</p>
-            <h1 class="heading--main heading">War For Love</h1>
+            <div class="header__desc">
+              <p class="header__text">New Single</p>
+              <h1 class="heading--main heading">War For Love</h1>
+            </div>
             <div class="header__audio">
-              <audio controls="controls" preload="metadata">
-                <source src="./libs/audio.mp3" type="audio/mpeg"/>
-              </audio>
+              <button class="btn-play" id="btnPlay"><img src="./img/icons/play.svg" alt="play" id="btnPlayImg"/></button>
+              <div class="audio__progress-wrapper" id="audioProgressWrapper">
+                <div class="audio__progressbar" id="audioProgressBar">
+                  <div class="audio__progress" id="audioProgress"></div>
+                </div>
+              </div>
+              <div class="audio__time-bar">
+                <p class="audio__time" id="audioTimeCurrent">00:00</p>
+                <p class="audio__dash">-</p>
+                <p class="audio__time" id="audioTimeFull"></p>
+              </div>
+              <audio preload="metadata" id="audio" src="./libs/audio.mp3"></audio>
             </div>
           </div>
         </div>
