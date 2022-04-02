@@ -1,0 +1,15 @@
+.section__heading {
+  display: flex;
+  position: relative;
+  margin-bottom: 3.75rem;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4.5rem;
+}
+
+.section__heading::before {
+  content: url(../img/icons/equalizer.svg);
+  display: block;
+  margin-right: 1.875rem;
+  width: 4rem;
+}

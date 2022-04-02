@@ -50,12 +50,6 @@ function audioPause() {
   audio.pause();
 }
 
-function audioProgressUpdate(event) {
-  const { duration, currentTime } = audio;
-
-  //   console.log(event.target.currentTime);
-}
-
 function audioProgressChange() {
   const { duration, currentTime } = audio;
   let audioProgressWidth = (currentTime / duration) * 100;
